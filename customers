@@ -2,6 +2,7 @@
   {
     "id": "givskud-zoo",
     "name": "Givskud Zoo",
+    "tags": ["zoo", "ecommerce"],
     "links": [
       { "title": "website", "url": "https://givskudzoo.dk" },
       { "title": "meta business manager", "url": "https://business.facebook.com/" },
