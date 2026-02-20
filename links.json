@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ad-libraries",
+    "name": "Annoncebiblioteker",
+    "items": [
+      { "title": "Meta ad library", "url": "https://www.facebook.com/ads/library/" },
+      { "title": "Google ads transparency center", "url": "https://adstransparency.google.com/" },
+      { "title": "LinkedIn ad library", "url": "https://www.linkedin.com/ad-library/" }
+    ]
+  },
+  {
+    "id": "platforms",
+    "name": "Platforme",
+    "items": [
+      { "title": "Meta business suite", "url": "https://business.facebook.com/" },
+      { "title": "LinkedIn campaign manager", "url": "https://www.linkedin.com/campaignmanager/" }
+    ]
+  }
+]
