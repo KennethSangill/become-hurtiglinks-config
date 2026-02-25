@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Become Værktøjskasse</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <div class="title">Become værktøjskasse</div>
+          <div class="subtitle">Hurtiglinks og kundelinks</div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button id="tabStandard" class="tab active" type="button">Hurtiglinks</button>
+        <button id="tabCustomers" class="tab" type="button">Kundelinks</button>
+      </div>
+
+      <div class="topbar">
+        <input id="search" class="search" type="search" placeholder="Søg..." />
+        <button id="btnSync" class="btn" type="button" title="Hent nyeste fra github">Sync</button>
+        <button id="btnExport" class="btn" type="button" title="Export aktivt view som json">Export</button>
+        <button id="btnImport" class="btn" type="button" title="Import aktivt view som json (lokal override)">Import</button>
+      </div>
+
+      <div class="statusRow">
+        <div id="status" class="status">loader...</div>
+      </div>
+
+      <div id="importWrap" class="importWrap hidden">
+        <div class="importTitle">Import</div>
+        <textarea id="importArea" class="textarea" placeholder="indsæt json her..."></textarea>
+
+        <div class="importActions">
+          <button id="btnImportApply" class="btnPrimary" type="button">Indlæs</button>
+          <button id="btnImportCancel" class="btn" type="button">Annuller</button>
+          <button id="btnResetOverride" class="btn" type="button" title="fjern lokal override">Reset</button>
+        </div>
+
+        <div id="importMsg" class="importMsg"></div>
+        <div class="hint">Tip: tryk “sync” for at hente nyeste hurtiglinks</div>
+      </div>
+    </header>
+
+    <main id="content" class="content"></main>
+
+    <script src="links.js"></script>
+    <script src="customers.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
